@@ -32,6 +32,7 @@
 \date{10 October 2026}
 \subjclass[2020]{Primary 46L54, 60E05; Secondary 60G52}
 \keywords{unimodality, strong unimodality, free additive convolution, subordination, stable distributions}
+\usepackage{xurl}
 \begin{document}
 \begin{abstract}
 A probability measure $\mu$ on $\R$ is freely strongly unimodal if $\mu\boxplus\nu$ is unimodal for every unimodal probability measure $\nu$. We prove that only point masses have this property. This answers Problem~3.11 of Hasebe and Ueda, who proved it for measures of finite variance. The witnesses are explicit and do not depend on $\mu$: if $\mu$ is not a point mass, then $\mu\boxplus\bigl(\frac1{100}\delta_0+\frac{99}{100}U[0,L]\bigr)$ is not unimodal for all large $L$. We also show that the classical half of their Conjecture~5.5 fails for one-sided stable kernels. If $0<\alpha<1$ and $S_t$ is the law at time $t$ of a positive strictly $\alpha$-stable process, then for every nonnegative Borel function $f$ there is a probability measure $\mu$ with $\int f\,d\mu<\infty$ such that $\mu\ast S_t$ is unimodal for no $t>0$. In particular, a finite moment of order $2+\alpha$, or of every order, does not give unimodality in large time.
@@ -362,6 +363,8 @@ Science Foundation (ISF Grant 4101/25). Computational resources were
 provided in part by Google Cloud through its education credits program
 (credit 530550103).
 
+This work was done by multiple AI agents, Claude (Anthropic) and Codex (OpenAI), connected to Math Brain~\cite{MathBrainRepo} and working together inside the Brain framework~\cite{BrainFramework}, a shared, persistent memory in which the agents record claims, proofs, failed attempts and methods, retrieve one another's results, coordinate who works on what, and audit each other's work. For more on the details behind the Brain and Math Brain, see the Math Brain paper~\cite{MathBrainPaper}, the Math Brain repository~\cite{MathBrainRepo} and the Brain framework repository~\cite{BrainFramework}.
+
 \section*{Declaration of competing interest}
 The author holds equity in Heights Labs and in Convex Nexus Capital and
 has a management role at Convex Nexus Capital. These entities are included
@@ -372,6 +375,8 @@ The arguments of Section~3 and of Proposition~\ref{prop:atoms} in the case of th
 
 \section*{Data availability}
 No data were used.
+
+The code and data for this paper are at \url{https://github.com/yspennstate/free-strong-unimodality}. The paper is part of the Math Brain project, whose public repository is \url{https://github.com/yspennstate/math-brain-public}~\cite{MathBrainRepo}.
 
 \begin{thebibliography}{9}
 \bibitem{BB}
@@ -388,5 +393,11 @@ I.~A.~Ibragimov, \emph{On the composition of unimodal distributions}, Theory Pro
 K.~Sato, \emph{L\'evy Processes and Infinitely Divisible Distributions}, revised edition, Cambridge Studies in Advanced Mathematics \textbf{68}, Cambridge University Press, 2013.
 \bibitem{Yam}
 M.~Yamazato, \emph{Unimodality of infinitely divisible distribution functions of class $L$}, Ann. Probab. \textbf{6} (1978), 523--531. \href{https://doi.org/10.1214/aop/1176995474}{doi:10.1214/aop/1176995474}.
+\bibitem{MathBrainRepo} Y.~Shmalo, \emph{Math Brain: public snapshot, code and tests}, 2026, \url{https://github.com/yspennstate/math-brain-public}.
+
+\bibitem{MathBrainPaper} Y.~Shmalo, \emph{Math Brain: shared, auditable memory for multi-agent mathematical research}, October 2026, \url{https://github.com/yspennstate/math-brain-public/tree/main/papers/math-brain-2026-10-24}.
+
+\bibitem{BrainFramework} Y.~Shmalo, \emph{Brain Framework}, public software repository, 2026, \url{https://github.com/yspennstate/brain-framework-public}.
+
 \end{thebibliography}
 \end{document}
